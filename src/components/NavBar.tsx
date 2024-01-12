@@ -51,12 +51,12 @@ const NavBar = () => {
         >
           <div
             onClick={Navhandler}
-            className="md:hidden z-10 cursor-pointer flex items-center justify-between "
+            className="md:hidden z-10 cursor-pointer flex items-center justify-between pt-10 mr-10 mb-4"
           >
             <div>
-              <img src={logo} alt="logo" style={{ width: "120px" }} />
+              <img src={logo} alt="logo" style={{ width: "80px" }} />
             </div>
-            <div className="rounded-full shadow-xl p-4 bg-white">
+            <div className="rounded-full shadow-xl p-3 bg-white">
               <FaTimes style={{ color: "#5e17eb" }} />
             </div>
           </div>
