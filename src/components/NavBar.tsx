@@ -5,8 +5,17 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const [enable, setEnabled] = useState(false);
   //Event handler setting nav to the oppisote
-  const Navhandler = () => setNav(!nav);
+  const Navhandler = () => {
+    setNav(!nav);
+
+    if (nav) {
+      setEnabled(!enable);
+    } else {
+      setEnabled(enable);
+    }
+  };
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
