@@ -1,4 +1,5 @@
 //mport { CiMail } from "react-icons/ci";
+import { BsFillPeopleFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 
 const Hero = () => {
@@ -16,18 +17,18 @@ const Hero = () => {
           front-end web applications while learning back-end technologies.
         </p>
         <div>
-          <ul className="flex justify-between items-center px-8 sm:px-4">
-            <li className="rounded-full shadow-xl p-4 bg-white">
+          <ul className="flex justify-center items-center">
+            <li className="rounded-full shadow-xl p-4 bg-white ml-4">
               <FaLinkedin style={{ color: "#5e17eb" }} />
             </li>
-            <li className="rounded-full shadow-xl p-4 bg-white">
+            <li className="rounded-full shadow-xl p-4 bg-white ml-4">
               <FaGithub style={{ color: "#5e17eb" }} />
             </li>
-            <li className="rounded-full shadow-xl p-4 bg-white">
+            <li className="rounded-full shadow-xl p-4 bg-white ml-4">
               <FaMailBulk style={{ color: "#5e17eb" }} />
             </li>
-            <li className="rounded-full shadow-xl p-4 bg-white">
-              <FaLinkedin style={{ color: "#5e17eb" }} />
+            <li className="rounded-full shadow-xl p-4 bg-white ml-4">
+              <BsFillPeopleFill style={{ color: "#5e17eb" }} />
             </li>
           </ul>
         </div>

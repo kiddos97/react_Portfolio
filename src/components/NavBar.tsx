@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import { FaBars, FaGithub, FaMailBulk, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { BsFillPeopleFill } from "react-icons/bs";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -42,10 +43,11 @@ const NavBar = () => {
           <FaBars style={{ color: "#5e17eb" }} />
         </div>
         {/* Moblie Menu */}
+
         <div
           className={
             nav
-              ? "fixed top-0 left-0 w-[60%] h-screen bg-[#ecf0f3] p-4"
+              ? "fixed top-0 left-0 w-[70%] h-screen bg-[#ecf0f3] p-4"
               : "fixed hidden ease-out duration-500 "
           }
         >
@@ -87,7 +89,7 @@ const NavBar = () => {
                   <FaMailBulk style={{ color: "#5e17eb" }} />
                 </li>
                 <li className="rounded-full shadow-xl p-4 bg-white">
-                  <FaLinkedin style={{ color: "#5e17eb" }} />
+                  <BsFillPeopleFill style={{ color: "#5e17eb" }} />
                 </li>
               </ul>
             </div>
