@@ -46,7 +46,7 @@ const NavBar = () => {
           className={
             nav
               ? "fixed top-0 left-0 w-[60%] h-screen bg-[#ecf0f3] p-4"
-              : "fixed hidden ease-in-out duration-700 "
+              : "fixed hidden ease-out duration-500 "
           }
         >
           <div
@@ -60,35 +60,37 @@ const NavBar = () => {
               <FaTimes style={{ color: "#5e17eb" }} />
             </div>
           </div>
-          <p className="text-md inline border-b border-gray-300 p-2">
-            Let's build something legendary
-          </p>
-          <ul className="flex flex-col pt-12 uppercase">
-            <li className="p-4">Home</li>
-            <li className="p-4">About</li>
-            <li className="p-4">Project</li>
-            <li className="p-4">Skills</li>
-            <li className="p-4">Contact</li>
-          </ul>
-          {/*Social Icon */}
-          <p className=" text-sm uppercase p-4 text-[#5e17eb] pt-12">
-            Let's connect!
-          </p>
-          <div>
-            <ul className="flex justify-between items-center">
-              <li className="rounded-full shadow-xl p-4 bg-white">
-                <FaLinkedin style={{ color: "#5e17eb" }} />
-              </li>
-              <li className="rounded-full shadow-xl p-4 bg-white">
-                <FaGithub style={{ color: "#5e17eb" }} />
-              </li>
-              <li className="rounded-full shadow-xl p-4 bg-white">
-                <FaMailBulk style={{ color: "#5e17eb" }} />
-              </li>
-              <li className="rounded-full shadow-xl p-4 bg-white">
-                <FaLinkedin style={{ color: "#5e17eb" }} />
-              </li>
+          <div className="md:hidden">
+            <p className="text-md inline border-b border-gray-300 p-2">
+              Let's build something legendary
+            </p>
+            <ul className="flex flex-col pt-12 uppercase">
+              <li className="p-4">Home</li>
+              <li className="p-4">About</li>
+              <li className="p-4">Project</li>
+              <li className="p-4">Skills</li>
+              <li className="p-4">Contact</li>
             </ul>
+            {/*Social Icon */}
+            <p className=" text-sm uppercase p-4 text-[#5e17eb] pt-12">
+              Let's connect!
+            </p>
+            <div>
+              <ul className="flex justify-between items-center">
+                <li className="rounded-full shadow-xl p-4 bg-white">
+                  <FaLinkedin style={{ color: "#5e17eb" }} />
+                </li>
+                <li className="rounded-full shadow-xl p-4 bg-white">
+                  <FaGithub style={{ color: "#5e17eb" }} />
+                </li>
+                <li className="rounded-full shadow-xl p-4 bg-white">
+                  <FaMailBulk style={{ color: "#5e17eb" }} />
+                </li>
+                <li className="rounded-full shadow-xl p-4 bg-white">
+                  <FaLinkedin style={{ color: "#5e17eb" }} />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
