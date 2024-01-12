@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaGithub, FaMailBulk, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
 const NavBar = () => {
@@ -71,10 +71,10 @@ const NavBar = () => {
                 <FaLinkedin style={{ color: "#5e17eb" }} />
               </li>
               <li className="rounded-full shadow-xl p-4 bg-white">
-                <FaLinkedin style={{ color: "#5e17eb" }} />
+                <FaGithub style={{ color: "#5e17eb" }} />
               </li>
               <li className="rounded-full shadow-xl p-4 bg-white">
-                <FaLinkedin style={{ color: "#5e17eb" }} />
+                <FaMailBulk style={{ color: "#5e17eb" }} />
               </li>
               <li className="rounded-full shadow-xl p-4 bg-white">
                 <FaLinkedin style={{ color: "#5e17eb" }} />

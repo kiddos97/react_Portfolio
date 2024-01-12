@@ -1,4 +1,5 @@
-import { FaLinkedin } from "react-icons/fa";
+//mport { CiMail } from "react-icons/ci";
+import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -20,10 +21,10 @@ const Hero = () => {
               <FaLinkedin style={{ color: "#5e17eb" }} />
             </li>
             <li className="rounded-full shadow-xl p-4 bg-white">
-              <FaLinkedin style={{ color: "#5e17eb" }} />
+              <FaGithub style={{ color: "#5e17eb" }} />
             </li>
             <li className="rounded-full shadow-xl p-4 bg-white">
-              <FaLinkedin style={{ color: "#5e17eb" }} />
+              <FaMailBulk style={{ color: "#5e17eb" }} />
             </li>
             <li className="rounded-full shadow-xl p-4 bg-white">
               <FaLinkedin style={{ color: "#5e17eb" }} />
