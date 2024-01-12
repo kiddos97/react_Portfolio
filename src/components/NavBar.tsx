@@ -34,38 +34,40 @@ const NavBar = () => {
           <li className="p-4">Skills</li>
           <li className="p-4">Contact</li>
         </ul>
-
-        {/*Hamburger */}
         <div
           onClick={Navhandler}
-          className="md:hidden z-10 cursor-pointer rounded-full shadow-xl p-4 bg-white"
+          className="md:hidden z-10 cursor-pointer rounded-full shadow-xl p-4"
         >
           <FaBars style={{ color: "#5e17eb" }} />
         </div>
-        {/* Moblie Menu */}
-
+      </div>
+      <div
+        className={nav ? "fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+      >
         <div
           className={
             nav
-              ? "fixed top-0 left-0 w-[70%] h-screen bg-[#ecf0f3] p-4"
-              : "fixed hidden ease-out duration-500 "
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
-          <div
-            onClick={Navhandler}
-            className="md:hidden z-10 cursor-pointer flex items-center justify-between pt-10 mr-10 mb-4"
-          >
+          <div className="flex w-full items-center justify-between">
             <div>
               <img src={logo} alt="logo" style={{ width: "80px" }} />
             </div>
-            <div className="rounded-full shadow-xl p-3 bg-white">
+            <div
+              onClick={Navhandler}
+              className="rounded-full shadow-xl p-3 shadow-gray-400 cursor-pointer"
+            >
               <FaTimes style={{ color: "#5e17eb" }} />
             </div>
           </div>
-          <div className="md:hidden">
-            <p className="text-md inline border-b border-gray-300 p-2">
-              Let's build something legendary
+          <div className="text-md border-b border-gray-400 my-4">
+            <p className="w-[85%] md:w-[90%] py-4">
+              Let's build something legendary together
             </p>
+          </div>
+          <div>
             <ul className="flex flex-col pt-12 uppercase">
               <li className="p-4">Home</li>
               <li className="p-4">About</li>
@@ -73,25 +75,27 @@ const NavBar = () => {
               <li className="p-4">Skills</li>
               <li className="p-4">Contact</li>
             </ul>
-            {/*Social Icon */}
-            <p className=" text-sm uppercase p-4 text-[#5e17eb] pt-12">
-              Let's connect!
-            </p>
-            <div>
-              <ul className="flex justify-between items-center">
-                <li className="rounded-full shadow-xl p-4 bg-white">
-                  <FaLinkedin style={{ color: "#5e17eb" }} />
-                </li>
-                <li className="rounded-full shadow-xl p-4 bg-white">
-                  <FaGithub style={{ color: "#5e17eb" }} />
-                </li>
-                <li className="rounded-full shadow-xl p-4 bg-white">
-                  <FaMailBulk style={{ color: "#5e17eb" }} />
-                </li>
-                <li className="rounded-full shadow-xl p-4 bg-white">
-                  <BsFillPeopleFill style={{ color: "#5e17eb" }} />
-                </li>
-              </ul>
+            <div className="pt-30">
+              {/*Social Icon */}
+              <p className=" text-sm uppercase tracking-widest p-4 text-[#5e17eb] pt-12">
+                Let's connect!
+              </p>
+              <div>
+                <ul className="flex justify-between items-center">
+                  <li className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                    <FaLinkedin style={{ color: "#5e17eb" }} />
+                  </li>
+                  <li className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                    <FaGithub style={{ color: "#5e17eb" }} />
+                  </li>
+                  <li className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                    <FaMailBulk style={{ color: "#5e17eb" }} />
+                  </li>
+                  <li className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                    <BsFillPeopleFill style={{ color: "#5e17eb" }} />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
