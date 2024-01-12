@@ -6,17 +6,8 @@ import { BsFillPeopleFill } from "react-icons/bs";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const [enable, setEnabled] = useState(false);
   //Event handler setting nav to the oppisote
-  const Navhandler = () => {
-    setNav(!nav);
-
-    if (nav) {
-      setEnabled(!enable);
-    } else {
-      setEnabled(enable);
-    }
-  };
+  const Navhandler = () => setNav(!nav);
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
@@ -42,7 +33,9 @@ const NavBar = () => {
         </div>
       </div>
       <div
-        className={nav ? "fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
