@@ -27,7 +27,7 @@ const NavBar = () => {
         </ul>
         <div
           onClick={Navhandler}
-          className="md:hidden z-10 cursor-pointer rounded-full shadow-xl shadow-gray-400 p-4"
+          className="md:hidden z-10 cursor-pointer rounded-full shadow-xl shadow-gray-600 p-4"
         >
           <FaBars style={{ color: "#5e17eb" }} />
         </div>
@@ -46,11 +46,11 @@ const NavBar = () => {
         >
           <div className="flex w-full items-center justify-between">
             <div>
-              <img src={logo} alt="logo" style={{ width: "80px" }} />
+              <img src={logo} alt="logo" style={{ width: "100px" }} />
             </div>
             <div
               onClick={Navhandler}
-              className="rounded-full shadow-xl p-3 shadow-gray-400 cursor-pointer"
+              className="rounded-full shadow-xl p-3 shadow-gray-600 cursor-pointer"
             >
               <FaTimes style={{ color: "#5e17eb" }} />
             </div>
@@ -75,16 +75,16 @@ const NavBar = () => {
               </p>
               <div>
                 <ul className="flex justify-between items-center">
-                  <li className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
                     <FaLinkedin style={{ color: "#5e17eb" }} />
                   </li>
-                  <li className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
                     <FaGithub style={{ color: "#5e17eb" }} />
                   </li>
-                  <li className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
                     <FaMailBulk style={{ color: "#5e17eb" }} />
                   </li>
-                  <li className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
                     <BsFillPeopleFill style={{ color: "#5e17eb" }} />
                   </li>
                 </ul>

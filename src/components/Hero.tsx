@@ -18,16 +18,16 @@ const Hero = () => {
         </p>
         <div>
           <ul className="flex justify-center items-center">
-            <li className="rounded-full shadow-xl p-4 bg-white ml-4">
+            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
               <FaLinkedin style={{ color: "#5e17eb" }} />
             </li>
-            <li className="rounded-full shadow-xl p-4 bg-white ml-4">
+            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
               <FaGithub style={{ color: "#5e17eb" }} />
             </li>
-            <li className="rounded-full shadow-xl p-4 bg-white ml-4">
+            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
               <FaMailBulk style={{ color: "#5e17eb" }} />
             </li>
-            <li className="rounded-full shadow-xl p-4 bg-white ml-4">
+            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
               <BsFillPeopleFill style={{ color: "#5e17eb" }} />
             </li>
           </ul>
