@@ -7,13 +7,9 @@ import css from "../assets/css.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png"
 
-interface Skills {
-    name:string,
-    img: string,
 
-}
 
-export const skills: Skills[] = [
+export const skills = [
     {name:"Python",img:python},
     {name: "Html",img:html},
     {name: "JavaScript",img:javascript},
