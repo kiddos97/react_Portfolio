@@ -27,7 +27,7 @@ const NavBar = () => {
         </ul>
         <div
           onClick={Navhandler}
-          className="md:hidden z-10 cursor-pointer rounded-full shadow-xl p-4"
+          className="md:hidden z-10 cursor-pointer rounded-full shadow-xl shadow-gray-400 p-4"
         >
           <FaBars style={{ color: "#5e17eb" }} />
         </div>
