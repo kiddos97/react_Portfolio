@@ -1,6 +1,10 @@
 import { skills } from "../Skills/Skills";
 
-const Skill = ({ name, img }) => {
+interface Props {
+  name: string;
+  img: string;
+}
+const Skill: React.FC<Props> = ({ name, img }) => {
   return (
     <div className="grid grid-cols-2 gap-4 justify-center items-center">
       <div className="m-auto">
