@@ -29,7 +29,7 @@ const NavBar = () => {
           onClick={Navhandler}
           className="md:hidden z-10 cursor-pointer rounded-full shadow-xl shadow-gray-600 p-4"
         >
-          <FaBars style={{ color: "#5e17eb" }} />
+          <FaBars style={{ color: "#5651e5" }} />
         </div>
       </div>
       <div
@@ -52,7 +52,7 @@ const NavBar = () => {
               onClick={Navhandler}
               className="rounded-full shadow-xl p-3 shadow-gray-600 cursor-pointer"
             >
-              <FaTimes style={{ color: "#5e17eb" }} />
+              <FaTimes style={{ color: "#5651e5" }} />
             </div>
           </div>
           <div className="text-md border-b border-gray-400 my-4">
@@ -70,22 +70,22 @@ const NavBar = () => {
             </ul>
             <div className="pt-30">
               {/*Social Icon */}
-              <p className=" text-sm uppercase tracking-widest p-4 text-[#5e17eb] pt-12">
+              <p className=" text-sm uppercase tracking-widest p-4 text-[#5651e5] pt-12">
                 Let's connect!
               </p>
               <div>
                 <ul className="flex justify-between items-center">
                   <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <FaLinkedin style={{ color: "#5e17eb" }} />
+                    <FaLinkedin style={{ color: "#5651e5" }} />
                   </li>
                   <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <FaGithub style={{ color: "#5e17eb" }} />
+                    <FaGithub style={{ color: "#5651e5" }} />
                   </li>
                   <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <FaMailBulk style={{ color: "#5e17eb" }} />
+                    <FaMailBulk style={{ color: "#5651e5" }} />
                   </li>
                   <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <BsFillPeopleFill style={{ color: "#5e17eb" }} />
+                    <BsFillPeopleFill style={{ color: "#5651e5" }} />
                   </li>
                 </ul>
               </div>

@@ -8,19 +8,23 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
-          <h2 className="py-4 text-2xl sm:text-4xl uppercase">Who I am</h2>
+          <h2 className="py-4 text-xl sm:text-4xl uppercase">Who I am</h2>
           <p className="py-2 text-gray-600">
-            // Lorem ipsum dolor sit amet consectetur.
+            // I am not your normal developer.
           </p>
           <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-            molestias dolorem aut nostrum nemo provident harum fugit possimus
-            quam dolores!
+            I am Software developer currently at General Motors with over{" "}
+            <strong className="text-lg">2+ Years</strong> experiences. With a
+            keen mind for innovation and a passion for crafting cutting-edge
+            solutions, I previously worked on SAS DMP project and now currently
+            work on the DMP Merkle project, and on the side I do Front-End web
+            development.
           </p>
           <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            distinctio vero odit laborum dolores harum sequi saepe possimus
-            velit nulla!
+            My passion to create digital magic. With
+            <strong className="text-lg"> 2+ Years</strong> of Front-End
+            experience, I hope you'll witness the culmination of my dedication,
+            skills, and love for web development.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
             <a href="/"> Check out some of my latest work</a>

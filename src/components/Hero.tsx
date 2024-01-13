@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="max-w-[1000px] mx-auto px-8 text-center justify-center h-full">
         <p className="uppercase text-sm mb-4">Let's build something together</p>
         <h1 className="text-4xl sm:text-7xl mb-4">
-          Hi, I'm <span className="text-[#5e17eb] font-bold">Emmanuel</span>
+          Hi, I'm <span className="text-[#5651e5] font-bold">Emmanuel</span>
         </h1>
         <p className="text-4xl sm:text-7xl mb-4">A Front-End Web Developer</p>
         <p className="text-sm sm:text-lg mb-8">
@@ -19,16 +19,16 @@ const Hero = () => {
         <div>
           <ul className="flex justify-center items-center">
             <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
-              <FaLinkedin style={{ color: "#5e17eb" }} />
+              <FaLinkedin style={{ color: "#5651e5" }} />
             </li>
             <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
-              <FaGithub style={{ color: "#5e17eb" }} />
+              <FaGithub style={{ color: "#5651e5" }} />
             </li>
             <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
-              <FaMailBulk style={{ color: "#5e17eb" }} />
+              <FaMailBulk style={{ color: "#5651e5" }} />
             </li>
             <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
-              <BsFillPeopleFill style={{ color: "#5e17eb" }} />
+              <BsFillPeopleFill style={{ color: "#5651e5" }} />
             </li>
           </ul>
         </div>
