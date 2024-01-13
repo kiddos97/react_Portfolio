@@ -8,7 +8,9 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
-          <h2 className="py-4 text-xl sm:text-4xl uppercase">Who I am</h2>
+          <h2 className="py-4 text-xl font-bold sm:text-4xl uppercase">
+            Who I am
+          </h2>
           <p className="py-2 text-gray-600">
             // I am not your normal developer.
           </p>

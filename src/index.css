@@ -7,7 +7,8 @@
 
 @layer base {
     body{
-        @apply font-[Montserrat]
+        @apply font-[Montserrat];
+        @apply font-medium;
     }
     li{
         @apply px-4;
