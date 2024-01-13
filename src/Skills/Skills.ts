@@ -7,7 +7,7 @@ import css from "../assets/css.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png"
 
-type Skills = {
+interface Skills {
     name:string,
     img: string,
 
