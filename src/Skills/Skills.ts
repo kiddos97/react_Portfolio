@@ -7,15 +7,19 @@ import css from "../assets/css.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png"
 
+type Skills = {
+    name:string,
+    img: string,
 
+}
 
-export const skills = [
-    {name: "Python",img:python},
+export const skills: Skills[] = [
+    {name:"Python",img:python},
     {name: "Html",img:html},
     {name: "JavaScript",img:javascript},
     {name: "React",img:react},
     {name: "Mongo DB",img:mongo},
     {name: "CSS",img:css},
     {name: "Tailwind",img:tailwind},
-    {name: "TypeScript",img:typescript},]
+    {name: "TypeScript",img:typescript}]
 
