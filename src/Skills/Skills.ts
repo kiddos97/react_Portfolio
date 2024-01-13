@@ -2,10 +2,11 @@ import python from "../assets/python.png";
 import html from "../assets/html.png"
 import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
-import mongo from "../assets/mongot.png";
+import mongo from "../assets/mongo.png";
 import css from "../assets/css.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png"
+
 
 
 export const skills = [

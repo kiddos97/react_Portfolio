@@ -1,4 +1,4 @@
-import { skills } from "../components/Skills/Skills";
+import { skills } from "../Skills/Skills";
 
 const Skill = ({ name, img }) => {
   return (
