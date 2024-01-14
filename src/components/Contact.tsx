@@ -62,9 +62,50 @@ const Contact = () => {
                     <input
                       className="border-2 rounded-lg p-3 flex biorder-gray-300"
                       type="text"
+                      placeholder="Name..."
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2" htmlFor="">
+                      Phone Number
+                    </label>
+                    <input
+                      className="border-2 rounded-lg p-3 flex biorder-gray-300"
+                      type="text"
+                      placeholder="Name..."
                     />
                   </div>
                 </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2" htmlFor="">
+                    Email
+                  </label>
+                  <input
+                    className="border-2 rounded-lg p-3 flex biorder-gray-300"
+                    type="email"
+                    placeholder="Email..."
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2" htmlFor="">
+                    Subject
+                  </label>
+                  <input
+                    className="border-2 rounded-lg p-3 flex biorder-gray-300"
+                    type="text"
+                    placeholder="Email..."
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2" htmlFor="">
+                    Message
+                  </label>
+                  <textarea
+                    className="border-2 rounded-lg p-3 border0gray-300"
+                    rows={10}
+                  ></textarea>
+                </div>
+                <button>Send Message</button>
               </form>
             </div>
           </div>
