@@ -9,6 +9,7 @@
     body{
         @apply font-[Montserrat];
         @apply font-medium;
+        @apply bg-[#ecf0f3];
     }
     li{
         @apply px-4;
