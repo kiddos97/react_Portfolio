@@ -25,7 +25,7 @@ const Skills = () => {
           Skills
         </p>
         <h2 className="py-4 text-xl font-bold sm:text-4xl uppercase mb-4">
-          What I can do.
+          What I can do
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skills.map((skill, index) => (
