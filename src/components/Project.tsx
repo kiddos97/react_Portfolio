@@ -1,3 +1,4 @@
+//import { Link } from "react-router-dom";
 import { Projects } from "../Project/Project";
 
 interface Props {
@@ -23,6 +24,7 @@ const ProjectList: React.FC<Props> = ({
         <p className="pb-4 pt-2 text-center font-bold text-white">
           {projectdescription}
         </p>
+
         <a href="/">
           <p className="text-center py-3 rounded-xl bg-white text-gray-700 font-bold cursor-pointer text-lg">
             {link}
