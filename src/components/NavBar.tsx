@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { FaBars, FaGithub, FaMailBulk, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { BsFillPeopleFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -37,7 +38,11 @@ const NavBar = () => {
         </div>
         {/* Menu */}
         <ul className="hidden md:flex uppercase">
-          <li className="p-4">Home</li>
+          <li className="p-4">
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
           <li className="p-4">About</li>
           <li className="p-4">Project</li>
           <li className="p-4">Skills</li>
