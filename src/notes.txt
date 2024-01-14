@@ -63,3 +63,21 @@
         </div>
       </div>
     </div>
+
+
+     <div>
+                <ul className="flex justify-center items-center">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
+                    <FaLinkedin style={{ color: "#5651e5" }} />
+                  </li>
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
+                    <FaGithub style={{ color: "#5651e5" }} />
+                  </li>
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
+                    <FaMailBulk style={{ color: "#5651e5" }} />
+                  </li>
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
+                    <BsFillPeopleFill style={{ color: "#5651e5" }} />
+                  </li>
+                </ul>
+              </div>
