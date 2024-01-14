@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { FaBars, FaGithub, FaMailBulk, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
@@ -6,11 +6,29 @@ import { BsFillPeopleFill } from "react-icons/bs";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
   //Event handler setting nav to the oppisote
   const Navhandler = () => setNav(!nav);
 
+  useEffect(() => {
+    const handleshaow = () => {
+      if (window.scrollY) {
+        setShadow(!shadow);
+      } else {
+        setShadow(shadow);
+      }
+    };
+    window.addEventListener("scroll", handleshaow);
+  }, []);
+
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl shadow-gray-600 z-[100]"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       {/* Container */}
       <div className="flex justify-between items-center w-full bg-[#ecf0f3] h-full px-2 2xl:px-16">
         {/*Logo */}
