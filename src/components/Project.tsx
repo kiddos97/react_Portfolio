@@ -1,4 +1,4 @@
-import Projetcs from "../Project/Project";
+import { Projects } from "../Project/Project";
 
 const ProjectList = ({ projectname, projectdescription, img, link }) => {
   return (
@@ -31,7 +31,11 @@ const Project = () => {
         <h2 className="py-4 text-xl font-bold sm:text-4xl uppercase mb-4">
           What I've built
         </h2>
-        <div className="grid md:grid-cols-2 gap-8"></div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {Projects.map((project, index) => (
+            <ProjectList key={index} {...project} />
+          ))}
+        </div>
       </div>
     </div>
   );

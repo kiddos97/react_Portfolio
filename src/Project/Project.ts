@@ -26,4 +26,16 @@ export const Projects = [
         img: realestate,
         link: "More Info"
     },
+    {
+        projectname: "RealEstate",
+        projectdescription: "React js project",
+        img: realestate,
+        link: "More Info"
+    },
+    {
+        projectname: "RealEstate",
+        projectdescription: "React js project",
+        img: realestate,
+        link: "More Info"
+    },
 ]
