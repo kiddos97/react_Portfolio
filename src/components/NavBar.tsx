@@ -43,10 +43,26 @@ const NavBar = () => {
               Home
             </Link>
           </li>
-          <li className="p-4">About</li>
-          <li className="p-4">Project</li>
-          <li className="p-4">Skills</li>
-          <li className="p-4">Contact</li>
+          <li className="p-4">
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link to="project" smooth={true} duration={500}>
+              Project
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </li>
         </ul>
         <div
           onClick={Navhandler}
