@@ -1,6 +1,3 @@
-import work from "../assets/workImg.jpeg";
-//import realestate from "../assets/realestate.jpg";
-
 const Project = () => {
   return (
     <div className="w-full bg-[#ecf0f3]">
