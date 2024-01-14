@@ -5,7 +5,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 @layer base {
+   
     body{
         @apply font-[Montserrat];
         @apply font-medium;
