@@ -1,6 +1,18 @@
 import { Projects } from "../Project/Project";
 
-const ProjectList = ({ projectname, projectdescription, img, link }) => {
+interface Props {
+  projectname: string;
+  projectdescription: string;
+  img: string;
+  link: string;
+}
+
+const ProjectList: React.FC<Props> = ({
+  projectname,
+  projectdescription,
+  img,
+  link,
+}) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-600 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
       <img className="rounded-xl group-hover:opacity-10" src={img} alt="/" />
