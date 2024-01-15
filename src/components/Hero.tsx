@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div id="home" className="w-full pt-60 h-screen bg-[#ecf0f3] text-black">
+    <div id="home" className="w-full pt-60 h-screen text-black">
       <div className="max-w-[1000px] mx-auto px-8 text-center justify-center h-full">
         <p className="uppercase text-sm mb-4">Let's build something together</p>
         <h1 className="text-4xl sm:text-7xl mb-4">

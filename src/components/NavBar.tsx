@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import { FaBars, FaGithub, FaMailBulk, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { BsFillPeopleFill } from "react-icons/bs";
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 //import { Link } from "react-scroll";
 
 const NavBar = () => {

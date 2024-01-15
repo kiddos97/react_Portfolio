@@ -37,7 +37,7 @@ const ProjectList: React.FC<Props> = ({
 
 const Project = () => {
   return (
-    <div id="project" className="w-full bg-[#ecf0f3]">
+    <div id="project" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
