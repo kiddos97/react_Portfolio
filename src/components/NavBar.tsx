@@ -101,11 +101,32 @@ const NavBar = () => {
           </div>
           <div>
             <ul className="flex flex-col pt-12 uppercase">
-              <li className="p-4">Home</li>
-              <li className="p-4">About</li>
-              <li className="p-4">Project</li>
-              <li className="p-4">Skills</li>
-              <li className="p-4">Contact</li>
+              <li className="p-4">
+                <Link to="home" smooth={true} duration={500}>
+                  Home
+                </Link>
+              </li>
+              <li className="p-4">
+                <Link to="about" smooth={true} duration={500}>
+                  About
+                </Link>
+              </li>
+              <li className="p-4">
+                <Link to="project" smooth={true} duration={500}>
+                  Project
+                </Link>
+              </li>
+              <li className="p-4">
+                <Link to="skills" smooth={true} duration={500}>
+                  Skills
+                </Link>
+              </li>
+              <li className="p-4">
+                <Link to="contact" smooth={true} duration={500}>
+                  Contact
+                </Link>
+              </li>
+              x
             </ul>
             <div className="pt-30">
               {/*Social Icon */}
