@@ -1,6 +1,6 @@
 
 import realestate from "../assets/realestate.jpg";
-import portfolio from "../assets/portfolio.png";
+import portfolio from "../assets/website.png";
 
 export const Projects = [
     {
