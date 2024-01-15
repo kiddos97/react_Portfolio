@@ -3,14 +3,27 @@ import logo from "../assets/logo.png";
 import { FaBars, FaGithub, FaMailBulk, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { BsFillPeopleFill } from "react-icons/bs";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
 //import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navbg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const location = useLocation();
   //Event handler setting nav to the oppisote
   const Navhandler = () => setNav(!nav);
 
+  useEffect(() => {
+    if (location.pathname === "/portfolio_page") {
+      setNavBg("");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor(linkColor);
+    }
+  }, [location]);
   useEffect(() => {
     //setting shadow of border on scroll
     const handleshaow = () => {
@@ -25,6 +38,7 @@ const NavBar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navbg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl shadow-gray-600 z-[100]"
@@ -32,13 +46,16 @@ const NavBar = () => {
       }
     >
       {/* Container */}
-      <div className="flex justify-between items-center w-full bg-[#ecf0f3] h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/*Logo */}
         <div>
           <img src={logo} alt="logo" style={{ width: "120px" }} />
         </div>
         {/* Menu */}
-        <ul className="hidden md:flex uppercase">
+        <ul
+          style={{ color: `${linkColor}` }}
+          className="hidden md:flex uppercase"
+        >
           <li className="p-4">
             <a href="/">Home</a>
           </li>
