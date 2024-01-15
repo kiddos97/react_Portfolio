@@ -1,11 +1,12 @@
-import work from "../assets/workImg.jpeg";
+
 import realestate from "../assets/realestate.jpg";
+import portfolio from "../assets/portfolio.png";
 
 export const Projects = [
     {
-        projectname: "Work",
+        projectname: "Portfolio",
         projectdescription: "React js project",
-        img: work,
+        img: portfolio,
         link: "More Info"
     },
     {
@@ -15,9 +16,9 @@ export const Projects = [
         link: "More Info"
     },
     {
-        projectname: "Work",
+        projectname: "Portfolio",
         projectdescription: "React js project",
-        img: work,
+        img: portfolio,
         link: "More Info"
     },
     {
@@ -27,9 +28,9 @@ export const Projects = [
         link: "More Info"
     },
     {
-        projectname: "RealEstate",
+        projectname: "Portfolio",
         projectdescription: "React js project",
-        img: realestate,
+        img: portfolio,
         link: "More Info"
     },
     {
