@@ -5,7 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
-//import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 //import Project_page from "./components/Project_page";
 
 function App() {
@@ -15,12 +15,18 @@ function App() {
   return (
     <>
       <NavBar />
-
-      <Hero />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      {/* <Hero />
       <About />
       <Skills />
       <Project />
-      <Contact />
+      <Contact /> */}
     </>
   );
 }

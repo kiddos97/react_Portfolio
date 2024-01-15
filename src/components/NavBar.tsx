@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import { FaBars, FaGithub, FaMailBulk, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { BsFillPeopleFill } from "react-icons/bs";
-import { Link } from "react-scroll";
+//import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -40,29 +40,19 @@ const NavBar = () => {
         {/* Menu */}
         <ul className="hidden md:flex uppercase">
           <li className="p-4">
-            <Link to="home" smooth={true} duration={500}>
-              Home
-            </Link>
+            <a href="/">Home</a>
           </li>
           <li className="p-4">
-            <Link to="about" smooth={true} duration={500}>
-              About
-            </Link>
+            <a href="/about">About</a>
           </li>
           <li className="p-4">
-            <Link to="project" smooth={true} duration={500}>
-              Project
-            </Link>
+            <a href="/project">Project</a>
           </li>
           <li className="p-4">
-            <Link to="skills" smooth={true} duration={500}>
-              Skills
-            </Link>
+            <a href="/skills">Skills</a>
           </li>
           <li className="p-4">
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
         <div
@@ -104,54 +94,19 @@ const NavBar = () => {
           <div>
             <ul className="flex flex-col pt-12 uppercase">
               <li className="p-4">
-                <Link
-                  onClick={Navhandler}
-                  to="home"
-                  smooth={true}
-                  duration={500}
-                >
-                  Home
-                </Link>
+                <a href="/">Home</a>
               </li>
               <li className="p-4">
-                <Link
-                  onClick={Navhandler}
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                >
-                  About
-                </Link>
+                <a href="/about">About</a>
               </li>
               <li className="p-4">
-                <Link
-                  onClick={Navhandler}
-                  to="project"
-                  smooth={true}
-                  duration={500}
-                >
-                  Project
-                </Link>
+                <a href="/project">Project</a>
               </li>
               <li className="p-4">
-                <Link
-                  onClick={Navhandler}
-                  to="skills"
-                  smooth={true}
-                  duration={500}
-                >
-                  Skills
-                </Link>
+                <a href="/skills">Skills</a>
               </li>
               <li className="p-4">
-                <Link
-                  onClick={Navhandler}
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                >
-                  Contact
-                </Link>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
             <div className="pt-30">
