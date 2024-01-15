@@ -13,14 +13,14 @@ const Portfolio_page = () => {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
           <h2 className="py-2">Portfolio</h2>
-          <h3>React Js / Tailwind</h3>
+          <h3>React Js / Tailwind / TypeScript</h3>
         </div>
       </div>
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p>Project</p>
-          <h2>Overview</h2>
+          <p className="mb-2 text-lg sm:text-xl">Project</p>
+          <h2 className="mb-2">Overview</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
             cupiditate laudantium nesciunt nobis nihil autem quaerat sit optio
@@ -29,10 +29,14 @@ const Portfolio_page = () => {
             eveniet! Maxime libero iusto quos. Fugiat delectus minima reiciendis
             voluptates nulla adipisci?
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <button className="px-8 py-2 mt-4 mr-8">
+            <a href="#">Demo</a>
+          </button>
+          <button className="px-8 py-2 mt-4">
+            <a href="https://github.com/kiddos97/React-Portfolio.git">Code</a>
+          </button>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-600 rounded-xl p-4">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4">
           <div className="py-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
