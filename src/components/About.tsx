@@ -2,7 +2,10 @@ import about from "../assets/about.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div
+      id="about"
+      className="w-full pt-20 md:h-screen p-2 flex items-center py-16"
+    >
       <div className="max-w-[1240px] mx-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
@@ -15,8 +18,9 @@ const About = () => {
             // I am not your normal developer.
           </p>
           <p className="py-2 text-gray-600">
-            I am Software developer currently at General Motors with over{" "}
-            <strong className="text-lg">2+ Years</strong> experiences. With a
+            I am Full-Stack developer based in Austin, Tx. I currently work at
+            General Motors, where I'm a software developer with over
+            <strong className="text-lg"> 2+ Years</strong> experiences. With a
             keen mind for innovation and a passion for crafting cutting-edge
             solutions, I previously worked on SAS DMP project and now currently
             work on the DMP Merkle project, and on the side I do Front-End web
