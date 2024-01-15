@@ -22,12 +22,11 @@ const Portfolio_page = () => {
           <p className="mb-2 text-lg sm:text-xl">Project</p>
           <h2 className="mb-2">Overview</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-            cupiditate laudantium nesciunt nobis nihil autem quaerat sit optio
-            doloribus? Quibusdam in architecto, illo iste rerum provident neque
-            quis error, vero tenetur ex optio eum dignissimos ab tempora modi
-            eveniet! Maxime libero iusto quos. Fugiat delectus minima reiciendis
-            voluptates nulla adipisci?
+            This app was built using React Js, TypeScript and Tailwind Css. This
+            is a single page portfoilo with a fully functioning navigation menu
+            and smooth scrolling. The page consists of an about section, a skill
+            section displying the users lists of skills and a project section
+            that has links to recent created projects.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a href="#">Demo</a>
