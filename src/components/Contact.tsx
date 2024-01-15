@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import contact from "../assets/contact.jpg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Contact = () => {
   return (
@@ -115,10 +116,12 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <div className="rounded-full shadow-lg shadow-gray-600 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-            <HiOutlineChevronDoubleUp
-              className="m-auto text-[#5651e5]"
-              size={30}
-            />
+            <Link to="home" smooth={true} duration={500}>
+              <HiOutlineChevronDoubleUp
+                className="m-auto text-[#5651e5]"
+                size={30}
+              />
+            </Link>
           </div>
         </div>
       </div>
