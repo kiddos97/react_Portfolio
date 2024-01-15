@@ -11,7 +11,7 @@ import typescript from "../assets/typescript.png"
 
 export const skills = [
     {name:"Python",img:python},
-    {name: "Html",img:html},
+    {name: "HTML",img:html},
     {name: "JavaScript",img:javascript},
     {name: "React",img:react},
     {name: "Mongo DB",img:mongo},

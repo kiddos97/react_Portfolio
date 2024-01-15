@@ -33,7 +33,7 @@ const About = () => {
             skills, and love for web development.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
-            <a href="/"> Check out some of my latest work</a>
+            <a href="/project"> Check out some of my latest work</a>
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
