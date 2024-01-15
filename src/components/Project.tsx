@@ -25,7 +25,7 @@ const ProjectList: React.FC<Props> = ({
           {projectdescription}
         </p>
 
-        <a href="/">
+        <a href="/project_page">
           <p className="text-center py-3 rounded-xl bg-white text-gray-700 font-bold cursor-pointer text-lg">
             {link}
           </p>
