@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
-import Project_page from "./components/Project_page";
+import Portfolio_page from "./components/Portfolio_page";
 
 function App() {
   useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/project_page" element={<Project_page />} />
+        <Route path="/portfolio_page" element={<Portfolio_page />} />
       </Routes>
       {/* <Hero />
       <About />

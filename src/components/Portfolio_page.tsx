@@ -1,9 +1,9 @@
 import { RiRadioButtonFill } from "react-icons/ri";
 import portfolio from "../assets/website.png";
 
-const Project_page = () => {
+const Portfolio_page = () => {
   return (
-    <div id="project_page" className="w-full">
+    <div id="portfolio_page" className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10 " />
         <img
@@ -35,14 +35,14 @@ const Project_page = () => {
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-600 rounded-xl p-4">
           <div className="py-2">
             <p className="text-center font-bold pb-2">Technologies</p>
-            <div>
+            <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
                 React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
-                Tailwind
+                Tailwind CSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
@@ -55,9 +55,12 @@ const Project_page = () => {
             </div>
           </div>
         </div>
+        <a href="/project">
+          <p className="underline cursor-pointer">Back</p>
+        </a>
       </div>
     </div>
   );
 };
 
-export default Project_page;
+export default Portfolio_page;
