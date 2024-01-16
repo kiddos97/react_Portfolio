@@ -20,7 +20,7 @@ const NavBar = () => {
       location.pathname === "/portfolio_page" ||
       location.pathname === "/cloud_page"
     ) {
-      setNavBg("");
+      setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
       setNavBg("#ecf0f3");
