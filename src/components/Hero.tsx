@@ -18,20 +18,20 @@ const Hero = () => {
         </p>
         <div>
           <ul className="flex justify-center items-center">
-            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
+            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4 hover:scale-110 ease-in duration-300">
               <a href="http://www.linkedin.com/in/osaro-imarhiagbe">
                 <FaLinkedin style={{ color: "#5651e5" }} />
               </a>
             </li>
-            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
+            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4 hover:scale-110 ease-in duration-300">
               <a href="http://github.com/kiddos97">
                 <FaGithub style={{ color: "#5651e5" }} />
               </a>
             </li>
-            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
+            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4 hover:scale-110 ease-in duration-300">
               <FaMailBulk style={{ color: "#5651e5" }} />
             </li>
-            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
+            <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4 hover:scale-110 ease-in duration-300">
               <BsFillPeopleFill style={{ color: "#5651e5" }} />
             </li>
           </ul>

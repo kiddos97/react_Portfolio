@@ -35,10 +35,14 @@ const Contact = () => {
                 <div className="p-4">
                   <ul className="flex justify-center items-center">
                     <li className="rounded-full shadow-xl shadow-gray-600  p-4 ml-4">
-                      <FaLinkedin style={{ color: "#5651e5" }} />
+                      <a href="http://www.linkedin.com/in/osaro-imarhiagbe">
+                        <FaLinkedin style={{ color: "#5651e5" }} />
+                      </a>
                     </li>
                     <li className="rounded-full shadow-xl shadow-gray-600  p-4 ml-4">
-                      <FaGithub style={{ color: "#5651e5" }} />
+                      <a href="http://github.com/kiddos97">
+                        <FaGithub style={{ color: "#5651e5" }} />
+                      </a>
                     </li>
                     <li className="rounded-full shadow-xl shadow-gray-600 p-4 ml-4">
                       <FaMailBulk style={{ color: "#5651e5" }} />

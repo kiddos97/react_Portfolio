@@ -156,20 +156,20 @@ const NavBar = () => {
               </p>
               <div>
                 <ul className="flex justify-between items-center">
-                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-500">
                     <a href="http://www.linkedin.com/in/osaro-imarhiagbe">
                       <FaLinkedin style={{ color: "#5651e5" }} />
                     </a>
                   </li>
-                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-500">
                     <a href="http://github.com/kiddos97">
                       <FaGithub style={{ color: "#5651e5" }} />
                     </a>
                   </li>
-                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-500">
                     <FaMailBulk style={{ color: "#5651e5" }} />
                   </li>
-                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                  <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-500">
                     <BsFillPeopleFill style={{ color: "#5651e5" }} />
                   </li>
                 </ul>
