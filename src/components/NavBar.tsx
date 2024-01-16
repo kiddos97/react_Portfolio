@@ -16,7 +16,10 @@ const NavBar = () => {
   const Navhandler = () => setNav(!nav);
 
   useEffect(() => {
-    if (location.pathname === "/portfolio_page") {
+    if (
+      location.pathname === "/portfolio_page" ||
+      location.pathname === "/cloud_page"
+    ) {
       setNavBg("");
       setLinkColor("#ecf0f3");
     } else {

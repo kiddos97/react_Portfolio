@@ -34,7 +34,7 @@ const Cloud_page = () => {
             <a href="#">Demo</a>
           </button>
           <button className="px-8 py-2 mt-4">
-            <a href="https://github.com/kiddos97/React-Portfolio.git">Code</a>
+            <a href="https://github.com/kiddos97/icode-react-app.git">Code</a>
           </button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4">
