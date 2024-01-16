@@ -21,14 +21,14 @@ const Cloud_page = () => {
         <div className="col-span-4">
           <p className="mb-2 text-lg sm:text-xl">Project</p>
           <h2 className="mb-2">Overview</h2>
-          <p>
+          <p className="text-lg sm:text-xl">
             This app was built using React Js, TypeScript and Tailwind Css. This
-            is a single page cloud base company webiste with a fully functioning
-            navigation menu and smooth scrolling. The page consists of a home
-            and about section, a skill section displying the users lists of
-            skills and a project section that consits of links to recent created
-            projects. Lastly, there is a contact section that consists of a
-            working contact form, that handles user input and form validation.
+            is a cloud base company app with a fully functioning navigation menu
+            and smooth scrolling. The page offers a section with a newletters so
+            consumers are able to stay up to date with recent news, a detailed
+            section covering the type of services that is offered. This is a
+            overall template for a website, app can also be connected to a
+            back-end.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a href="#">Demo</a>
@@ -39,11 +39,11 @@ const Cloud_page = () => {
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4">
           <div className="py-2">
-            <p className="text-center font-bold pb-2">Technologies</p>
+            3<p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
-                React
+                React Js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />

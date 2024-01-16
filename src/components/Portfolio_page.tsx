@@ -21,7 +21,7 @@ const Portfolio_page = () => {
         <div className="col-span-4">
           <p className="mb-2 text-lg sm:text-xl">Project</p>
           <h2 className="mb-2">Overview</h2>
-          <p>
+          <p className="text-lg sm:text-xl">
             This app was built using React Js, TypeScript and Tailwind Css. This
             is a single page portfolio with a fully functioning navigation menu
             and smooth scrolling. The page consists of an home and about
@@ -43,7 +43,7 @@ const Portfolio_page = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
-                React
+                React Js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
