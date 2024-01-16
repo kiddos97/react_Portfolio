@@ -11,7 +11,17 @@ import Portfolio_page from "./components/Portfolio_page";
 function App() {
   useEffect(() => {
     document.title = "Portfolio";
-  });
+
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "public/favicon.ico";
+
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
   return (
     <>
       <NavBar />

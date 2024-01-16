@@ -56,20 +56,30 @@ const NavBar = () => {
           style={{ color: `${linkColor}` }}
           className="hidden md:flex uppercase"
         >
-          <li className="p-4">
-            <a href="/">Home</a>
+          <li className="p-4 ">
+            <a className="hover:border-b-2 border-purple-500" href="/">
+              Home
+            </a>
           </li>
           <li className="p-4">
-            <a href="/about">About</a>
+            <a className="hover:border-b-2 border-purple-400" href="/about">
+              About
+            </a>
           </li>
           <li className="p-4">
-            <a href="/project">Project</a>
+            <a className="hover:border-b-2 border-purple-400" href="/project">
+              Project
+            </a>
           </li>
           <li className="p-4">
-            <a href="/skills">Skills</a>
+            <a className="hover:border-b-2 border-purple-400" href="/skills">
+              Skills
+            </a>
           </li>
           <li className="p-4">
-            <a href="/contact">Contact</a>
+            <a className="hover:border-b-2 border-purple-400" href="/contact">
+              Contact
+            </a>
           </li>
         </ul>
         <div
@@ -134,10 +144,14 @@ const NavBar = () => {
               <div>
                 <ul className="flex justify-between items-center">
                   <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <FaLinkedin style={{ color: "#5651e5" }} />
+                    <a href="http://www.linkedin.com/in/osaro-imarhiagbe">
+                      <FaLinkedin style={{ color: "#5651e5" }} />
+                    </a>
                   </li>
                   <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                    <FaGithub style={{ color: "#5651e5" }} />
+                    <a href="http://github.com/kiddos97">
+                      <FaGithub style={{ color: "#5651e5" }} />
+                    </a>
                   </li>
                   <li className="rounded-full shadow-xl shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
                     <FaMailBulk style={{ color: "#5651e5" }} />
