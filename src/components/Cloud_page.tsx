@@ -12,7 +12,7 @@ const Cloud_page = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">Portfolio</h2>
+          <h2 className="py-2">Cloud Base App</h2>
           <h3>React Js / Tailwind / TypeScript</h3>
         </div>
       </div>
@@ -23,12 +23,12 @@ const Cloud_page = () => {
           <h2 className="mb-2">Overview</h2>
           <p>
             This app was built using React Js, TypeScript and Tailwind Css. This
-            is a single page portfolio with a fully functioning navigation menu
-            and smooth scrolling. The page consists of an home and about
-            section, a skill section displying the users lists of skills and a
-            project section that consits of links to recent created projects.
-            Lastly, there is a contact section that consists of a working
-            contact form, that handles user input and form validation.
+            is a single page cloud base company webiste with a fully functioning
+            navigation menu and smooth scrolling. The page consists of a home
+            and about section, a skill section displying the users lists of
+            skills and a project section that consits of links to recent created
+            projects. Lastly, there is a contact section that consists of a
+            working contact form, that handles user input and form validation.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a href="#">Demo</a>
