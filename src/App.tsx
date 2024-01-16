@@ -10,9 +10,9 @@ import Portfolio_page from "./components/Portfolio_page";
 import AOS from "aos";
 
 function App() {
-  useEffect(()= > {
+  useEffect(() => {
     AOS.init();
-  },[])
+  }, []);
   useEffect(() => {
     document.title = "Portfolio";
   });
