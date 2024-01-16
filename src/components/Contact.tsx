@@ -116,12 +116,12 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <div className="rounded-full shadow-lg shadow-gray-600 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-            <Link to="home" smooth={true} duration={500}>
+            <a href="/">
               <HiOutlineChevronDoubleUp
                 className="m-auto text-[#5651e5]"
                 size={30}
               />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
