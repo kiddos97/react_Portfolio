@@ -2,7 +2,6 @@ import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import contact from "../assets/contact.jpg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { Link } from "react-scroll";
 
 const Contact = () => {
   return (
