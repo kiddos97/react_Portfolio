@@ -77,7 +77,7 @@ const Contact = () => {
                     <input
                       className="border-2 rounded-lg p-3 flex biorder-gray-300"
                       type="text"
-                      placeholder="Name..."
+                      placeholder="Phone Number..."
                     />
                   </div>
                 </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex biorder-gray-300"
                     type="text"
-                    placeholder="Email..."
+                    placeholder="Subject..."
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -107,6 +107,7 @@ const Contact = () => {
                   </label>
                   <textarea
                     className="border-2 rounded-lg p-3 border0gray-300"
+                    placeholder="Message..."
                     rows={10}
                   ></textarea>
                 </div>
