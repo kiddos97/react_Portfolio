@@ -57,27 +57,27 @@ const NavBar = () => {
           className="hidden md:flex uppercase"
         >
           <li className="p-4 ">
-            <a className="hover:border-b-2 border-purple-500" href="/">
+            <a className="hover:border-b-2 border-black" href="/">
               Home
             </a>
           </li>
           <li className="p-4">
-            <a className="hover:border-b-2 border-purple-400" href="/about">
+            <a className="hover:border-b-2 border-black" href="/about">
               About
             </a>
           </li>
           <li className="p-4">
-            <a className="hover:border-b-2 border-purple-400" href="/project">
+            <a className="hover:border-b-2 border-black" href="/project">
               Project
             </a>
           </li>
           <li className="p-4">
-            <a className="hover:border-b-2 border-purple-400" href="/skills">
+            <a className="hover:border-b-2 border-black" href="/skills">
               Skills
             </a>
           </li>
           <li className="p-4">
-            <a className="hover:border-b-2 border-purple-400" href="/contact">
+            <a className="hover:border-b-2 border-black" href="/contact">
               Contact
             </a>
           </li>
@@ -120,20 +120,30 @@ const NavBar = () => {
           </div>
           <div>
             <ul className="flex flex-col pt-12 uppercase">
-              <li className="p-4">
-                <a href="/">Home</a>
+              <li className="p-4 ">
+                <a className="hover:border-b-2 border-black" href="/">
+                  Home
+                </a>
               </li>
               <li className="p-4">
-                <a href="/about">About</a>
+                <a className="hover:border-b-2 border-black" href="/about">
+                  About
+                </a>
               </li>
               <li className="p-4">
-                <a href="/project">Project</a>
+                <a className="hover:border-b-2 border-black" href="/project">
+                  Project
+                </a>
               </li>
               <li className="p-4">
-                <a href="/skills">Skills</a>
+                <a className="hover:border-b-2 border-black" href="/skills">
+                  Skills
+                </a>
               </li>
               <li className="p-4">
-                <a href="/contact">Contact</a>
+                <a className="hover:border-b-2 border-black" href="/contact">
+                  Contact
+                </a>
               </li>
             </ul>
             <div className="pt-30">
