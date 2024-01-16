@@ -1,5 +1,5 @@
 
-import realestate from "../assets/realestate.jpg";
+import cloud from "../assets/cloud.png";
 import portfolio from "../assets/website.png";
 
 export const Projects = [
@@ -10,9 +10,9 @@ export const Projects = [
         link: "More Info"
     },
     {
-        projectname: "RealEstate",
+        projectname: "Cloud",
         projectdescription: "React js project",
-        img: realestate,
+        img: cloud,
         link: "More Info"
     },
     {
@@ -22,9 +22,9 @@ export const Projects = [
         link: "More Info"
     },
     {
-        projectname: "RealEstate",
+        projectname: "Cloud",
         projectdescription: "React js project",
-        img: realestate,
+        img: cloud,
         link: "More Info"
     },
     {
@@ -34,9 +34,9 @@ export const Projects = [
         link: "More Info"
     },
     {
-        projectname: "RealEstate",
+        projectname: "Cloud",
         projectdescription: "React js project",
-        img: realestate,
+        img: cloud,
         link: "More Info"
     },
 ]
