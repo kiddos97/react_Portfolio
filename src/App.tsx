@@ -7,12 +7,8 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
 import Portfolio_page from "./components/Portfolio_page";
-import AOS from "aos";
 
 function App() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   useEffect(() => {
     document.title = "Portfolio";
   });
