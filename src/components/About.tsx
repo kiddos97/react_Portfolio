@@ -7,7 +7,7 @@ const About = () => {
       className="w-full pt-20 md:h-screen p-2 flex items-center py-16"
     >
       <div className="max-w-[1240px] mx-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+        <div className="col-span-2" data-aos="fade-right">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
@@ -36,7 +36,10 @@ const About = () => {
             <a href="/project"> Check out some of my latest work</a>
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div
+          className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300"
+          data-aos="fade-left"
+        >
           <img className="rounded-xl" src={about} alt="laptop" />
         </div>
       </div>
