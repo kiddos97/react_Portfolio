@@ -5,6 +5,7 @@ interface Props {
   projectname: string;
   projectdescription: string;
   img: string;
+  button: string;
   link: string;
 }
 
@@ -12,6 +13,7 @@ const ProjectList: React.FC<Props> = ({
   projectname,
   projectdescription,
   img,
+  button,
   link,
 }) => {
   return (
@@ -25,9 +27,9 @@ const ProjectList: React.FC<Props> = ({
           {projectdescription}
         </p>
 
-        <a href="/portfolio_page">
+        <a href={link}>
           <p className="text-center py-3 rounded-xl bg-white text-gray-700 font-bold cursor-pointer text-lg">
-            {link}
+            {button}
           </p>
         </a>
       </div>

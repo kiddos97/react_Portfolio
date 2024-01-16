@@ -7,6 +7,7 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
 import Portfolio_page from "./components/Portfolio_page";
+import Cloud_page from "./components/Cloud_page";
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio_page" element={<Portfolio_page />} />
+        <Route path="/cloud_page" element={<Cloud_page />} />
       </Routes>
       {/* <Hero />
       <About />
