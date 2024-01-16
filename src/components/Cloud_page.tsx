@@ -39,7 +39,7 @@ const Cloud_page = () => {
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4">
           <div className="py-2">
-            3<p className="text-center font-bold pb-2">Technologies</p>
+            <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
