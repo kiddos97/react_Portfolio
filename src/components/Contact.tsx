@@ -2,7 +2,6 @@ import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import contact from "../assets/contact.jpg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { useState } from "react";
 
 // const handleSubmit = async (event: {
 //   preventDefault: () => void;
@@ -35,42 +34,18 @@ import { useState } from "react";
 // };
 
 const Contact = () => {
-  const [FormData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-    subject: "",
-  });
-
-  const handleChange = (e: { target: { name: any; value: any } }) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: { preventDefault: () => any }) => {
-    e.preventDefault();
-    console.log(FormData);
-
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-      subject: "",
-    });
-  };
   return (
     <div id="contact" className="w-full  lg:h-screen pt-10">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5] ">
-          Contact
-        </p>
-        <h2 className="py-4">Get In Touch</h2>
+        <div className="animate__animated animate__fadeInDownBig duration-300">
+          <p className="text-xl tracking-widest uppercase text-[#5651e5] ">
+            Contact
+          </p>
+          <h2 className="py-4">Get In Touch</h2>
+        </div>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Left */}
-          <div className="cols-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-600 rounded-xl p-4">
+          <div className="cols-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-600 rounded-xl p-4 animate__animated animate__fadeInLeft duration-300">
             <div className="lg:p-4 h-full">
               <div>
                 <img
@@ -113,12 +88,11 @@ const Contact = () => {
             </div>
           </div>
           {/* Right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-600 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-600 rounded-xl lg:p-4 animate__animated animate__fadeInRight">
             <div className="p-4">
               <form
                 action="https://getform.io/f/bab19575-7084-44e8-b510-5536a0cfc917"
                 method="POST"
-                onSubmit={handleSubmit}
               >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
@@ -130,7 +104,6 @@ const Contact = () => {
                       type="text"
                       placeholder="Name..."
                       name="name"
-                      onChange={handleChange}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -142,7 +115,6 @@ const Contact = () => {
                       type="text"
                       placeholder="Phone Number..."
                       name="Phone Number"
-                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -155,7 +127,6 @@ const Contact = () => {
                     type="email"
                     placeholder="Email..."
                     name="Email"
-                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -167,7 +138,6 @@ const Contact = () => {
                     type="text"
                     placeholder="Subject..."
                     name="Subject"
-                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -179,7 +149,6 @@ const Contact = () => {
                     placeholder="Message..."
                     rows={10}
                     name="Message"
-                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
