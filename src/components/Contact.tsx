@@ -3,6 +3,36 @@ import contact from "../assets/contact.jpg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
+// const handleSubmit = async (event: {
+//   preventDefault: () => void;
+//   target: any;
+// }) => {
+//   event.preventDefault();
+
+//   // Get form data from the actual form element
+//   const form = event.target;
+//   const formData = new FormData(form);
+
+//   try {
+//     const response = await fetch("http://127.0.0.1:5000/send-email", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({
+//         name: formData.get("name"), // Access form field value by name
+//         email: formData.get("email"),
+//         subject: formData.get("subject"),
+//         message: formData.get("message"),
+//       }),
+//     });
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.error("Error:", error);
+//   }
+// };
+
 const Contact = () => {
   return (
     <div id="contact" className="w-full  lg:h-screen pt-10">
@@ -58,7 +88,10 @@ const Contact = () => {
           {/* Right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-600 rounded-xl lg:p-4">
             <div className="p-4">
-              <form action="">
+              <form
+                action="https://getform.io/f/bab19575-7084-44e8-b510-5536a0cfc917"
+                method="POST"
+              >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2" htmlFor="">
@@ -68,6 +101,7 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       placeholder="Name..."
+                      name="name"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -78,6 +112,7 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex biorder-gray-300"
                       type="text"
                       placeholder="Phone Number..."
+                      name="Phone Number"
                     />
                   </div>
                 </div>
@@ -89,6 +124,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex biorder-gray-300"
                     type="email"
                     placeholder="Email..."
+                    name="Email"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -99,6 +135,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex biorder-gray-300"
                     type="text"
                     placeholder="Subject..."
+                    name="Subject"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -109,6 +146,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     placeholder="Message..."
                     rows={10}
+                    name="Message"
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
