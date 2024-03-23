@@ -17,5 +17,7 @@ export const skills = [
     {name: "Mongo DB",img:mongo},
     {name: "CSS",img:css},
     {name: "Tailwind",img:tailwind},
-    {name: "TypeScript",img:typescript}]
+    {name: "TypeScript",img:typescript},
+    {name: "React Native",img:typescript},
+    {name: "SQL", img:typescript}]
 

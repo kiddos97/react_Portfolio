@@ -21,13 +21,15 @@ const Skills = () => {
   return (
     <div id="skills" className="w-full pt-20 lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5] p-2">
-          Skills
-        </p>
-        <h2 className="py-4 text-xl font-bold sm:text-4xl uppercase mb-4">
-          What I can do
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate__animated animate__fadeInRightBig ">
+        <div className="animate__animated animate__fadeInLeft">
+          <p className="text-xl tracking-widest uppercase text-[#5651e5] p-2">
+            Skills
+          </p>
+          <h2 className="py-4 text-xl font-bold sm:text-4xl uppercase mb-4">
+            What I can do
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 animate__animated animate__fadeInRightBig ">
           {skills.map((skill, index) => (
             <div
               key={index}

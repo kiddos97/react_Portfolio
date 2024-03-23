@@ -41,13 +41,15 @@ const Project = () => {
   return (
     <div id="project" className="w-full pt-20">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Projects
-        </p>
-        <h2 className="py-4 text-xl font-bold sm:text-4xl uppercase mb-4">
-          What I've built
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8 animate__animated animate__fadeInTopRight">
+        <div className="animate__animated animate__fadeInLeft">
+          <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+            Projects
+          </p>
+          <h2 className="py-4 text-xl font-bold sm:text-4xl uppercase mb-4">
+            What I've built
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8 animate__animated animate__fadeInRight">
           {Projects.map((project, index) => (
             <ProjectList key={index} {...project} />
           ))}
