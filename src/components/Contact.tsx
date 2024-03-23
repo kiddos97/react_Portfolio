@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import contact from "../assets/contact.jpg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { useState } from "react";
 
 // const handleSubmit = async (event: {
 //   preventDefault: () => void;
@@ -34,6 +35,32 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 // };
 
 const Contact = () => {
+  const [FormData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+    subject: "",
+  });
+
+  const handleChange = (e: { target: { name: any; value: any } }) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: { preventDefault: () => any }) => {
+    e.preventDefault();
+    console.log(FormData);
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+      subject: "",
+    });
+  };
   return (
     <div id="contact" className="w-full  lg:h-screen pt-10">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -91,6 +118,7 @@ const Contact = () => {
               <form
                 action="https://getform.io/f/bab19575-7084-44e8-b510-5536a0cfc917"
                 method="POST"
+                onSubmit={handleSubmit}
               >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
@@ -102,6 +130,7 @@ const Contact = () => {
                       type="text"
                       placeholder="Name..."
                       name="name"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -113,6 +142,7 @@ const Contact = () => {
                       type="text"
                       placeholder="Phone Number..."
                       name="Phone Number"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -125,6 +155,7 @@ const Contact = () => {
                     type="email"
                     placeholder="Email..."
                     name="Email"
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -136,6 +167,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Subject..."
                     name="Subject"
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -147,6 +179,7 @@ const Contact = () => {
                     placeholder="Message..."
                     rows={10}
                     name="Message"
+                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
