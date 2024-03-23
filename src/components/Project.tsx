@@ -47,7 +47,7 @@ const Project = () => {
         <h2 className="py-4 text-xl font-bold sm:text-4xl uppercase mb-4">
           What I've built
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 animate__animated animate__fadeInTopRight">
           {Projects.map((project, index) => (
             <ProjectList key={index} {...project} />
           ))}
