@@ -44,8 +44,8 @@ const NavBar = () => {
       style={{ backgroundColor: `${navbg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl shadow-gray-600 z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-20 shadow-xl shadow-gray-600 z-[100] rounded-full"
+          : "fixed w-full h-20 z-[100] rounded-full"
       }
     >
       {/* Container */}
@@ -101,7 +101,7 @@ const NavBar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 rounded-xl"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -151,7 +151,7 @@ const NavBar = () => {
             </ul>
             <div className="pt-30">
               {/*Social Icon */}
-              <p className=" text-sm uppercase tracking-widest p-4 text-[#5651e5] pt-12">
+              <p className=" text-sm uppercase tracking-widest p-4 text-[#5651e5] pt-5">
                 Let's connect!
               </p>
               <div>
