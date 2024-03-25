@@ -17,8 +17,13 @@ const ProjectList: React.FC<Props> = ({
   link,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto sm:w-[80%] shadow-xl shadow-gray-900 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
-      <img className="rounded-xl group-hover:opacity-10" src={img} alt="/" />
+    <div className="relative flex items-center justify-center h-auto sm:w-[50%] shadow-xl shadow-gray-900 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+      <img
+        style={{ width: "100%", height: "100%" }}
+        className="rounded-xl group-hover:opacity-10"
+        src={img}
+        alt="/"
+      />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
         <h3 className="text-2xl font-bold tracking-wider text-center text-white">
           {projectname}
@@ -49,7 +54,7 @@ const Project = () => {
             What I've built
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 animate__animated animate__fadeInRight">
+        <div className="grid md:grid-cols-2 gap-8 animate__animated animate__fadeInRight duration-500">
           {Projects.map((project, index) => (
             <ProjectList key={index} {...project} />
           ))}

@@ -1,7 +1,7 @@
 
 import cloudd from "../assets/cloudd.png";
 import portfolio from "../assets/website1.png";
-import html from '../assets/html.png'
+import weatherapp from '../assets/weatherApp.png'
 
 export const Projects = [
     {
@@ -20,11 +20,11 @@ export const Projects = [
         link: "/cloud_page"
     },
     {
-        projectname: "Portfolio",
-        projectdescription: "React js project",
-        img: html,
+        projectname: "Weather App",
+        projectdescription: "React Native project",
+        img: weatherapp,
         button: "More Info",
-        link: "/portfolio_page"
+        link: "/weatherapp_page"
     },
     {
         projectname: "Cloud",

@@ -18,7 +18,8 @@ const NavBar = () => {
   useEffect(() => {
     if (
       location.pathname === "/portfolio_page" ||
-      location.pathname === "/cloud_page"
+      location.pathname === "/cloud_page" ||
+      location.pathname === "/weatherapp_page"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");

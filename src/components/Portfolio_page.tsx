@@ -37,7 +37,7 @@ const Portfolio_page = () => {
             <a href="https://github.com/kiddos97/React-Portfolio.git">Code</a>
           </button>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4 hover:scale-110 ease-in duration-700">
           <div className="py-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">

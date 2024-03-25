@@ -1,19 +1,19 @@
 import { RiRadioButtonFill } from "react-icons/ri";
-import cloud from "../assets/cloud.png";
+import weatherapp from "../assets/weatherApp.png";
 
-const Cloud_page = () => {
+const WeatherApp_page = () => {
   return (
-    <div id="cloud_page" className="w-full">
+    <div id="weatherapp_page" className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10 " />
         <img
           className="absolute z-1 object-cover w-full h-full"
-          src={cloud}
+          src={weatherapp}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">Cloud Base App</h2>
-          <h3>React Js / Tailwind / TypeScript</h3>
+          <h2 className="py-2">Weather App</h2>
+          <h3>React Native / Expo / JavaScript</h3>
         </div>
       </div>
 
@@ -22,19 +22,18 @@ const Cloud_page = () => {
           <p className="mb-2 text-lg sm:text-xl">Project</p>
           <h2 className="mb-2">Overview</h2>
           <p className="text-lg sm:text-xl">
-            This app was built using React Js, TypeScript and Tailwind Css. This
-            is a cloud base company app with a fully functioning navigation menu
-            and smooth scrolling. The page offers a section with a newletters so
-            consumers are able to stay up to date with recent news, a detailed
-            section covering the type of services that is offered. This is a
-            overall template for a website, app can also be connected to a
-            back-end.
+            This app was built using React Native, JavaScript and Expo. This is
+            a basic weather app with a fully functioning navigation menu and
+            smooth scrolling. The app contains live updates of weather base on
+            current location or by search of city or state. App provides
+            description like humidity, wind speed, precipitation and more. App
+            uses expo-location to render users location for weather information.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a href="#">Demo</a>
           </button>
           <button className="px-8 py-2 mt-4">
-            <a href="https://github.com/kiddos97/icode-react-app.git">Code</a>
+            <a href="https://github.com/kiddos97/weatherApp.git">Code</a>
           </button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4 hover:scale-110 ease-in duration-700">
@@ -43,11 +42,7 @@ const Cloud_page = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
-                React Js
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-2" />
-                Tailwind CSS
+                React Native
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
@@ -55,7 +50,7 @@ const Cloud_page = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" />
-                TypeScript
+                Expo
               </p>
             </div>
           </div>
@@ -68,4 +63,4 @@ const Cloud_page = () => {
   );
 };
 
-export default Cloud_page;
+export default WeatherApp_page;
