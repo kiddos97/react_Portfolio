@@ -6,6 +6,7 @@ import mongo from "../assets/mongo.png";
 import css from "../assets/css.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png"
+import database from "../assets/database.png";
 
 
 
@@ -18,6 +19,6 @@ export const skills = [
     {name: "CSS",img:css},
     {name: "Tailwind",img:tailwind},
     {name: "TypeScript",img:typescript},
-    {name: "React Native",img:typescript},
-    {name: "SQL", img:typescript}]
+    {name: "React Native",img:react},
+    {name: "SQL", img:database}]
 

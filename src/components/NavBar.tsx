@@ -60,27 +60,27 @@ const NavBar = () => {
           className="hidden md:flex uppercase"
         >
           <li className="p-4 ">
-            <a className="hover:border-b-2 border-black" href="/">
+            <a className="hover:border-b-2 border-[#5651e5]" href="/">
               Home
             </a>
           </li>
           <li className="p-4">
-            <a className="hover:border-b-2 border-black" href="/about">
+            <a className="hover:border-b-2 border-[#5651e5]" href="/about">
               About
             </a>
           </li>
           <li className="p-4">
-            <a className="hover:border-b-2 border-black" href="/project">
+            <a className="hover:border-b-2 border-[#5651e5]" href="/project">
               Project
             </a>
           </li>
           <li className="p-4">
-            <a className="hover:border-b-2 border-black" href="/skills">
+            <a className="hover:border-b-2 border-[#5651e5]" href="/skills">
               Skills
             </a>
           </li>
           <li className="p-4">
-            <a className="hover:border-b-2 border-black" href="/contact">
+            <a className="hover:border-b-2 border-[#5651e5]" href="/contact">
               Contact
             </a>
           </li>
